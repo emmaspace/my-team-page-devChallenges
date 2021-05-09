@@ -42,14 +42,14 @@ table {
 /* End of reset */
 
 
+/* General styling */
 body{
     color: #000;
     font-size: 18px;
-    padding: 10vh 10vw 2vh;
+    padding: 10vh 10vw 2vh 12vw;
 }
 
 /* Text styling */
-
 h1{
     font-family: 'PT Serif', serif;
     font-weight: 700;
@@ -89,6 +89,8 @@ footer{
     color: #A9A9A9;
     font-weight: 500;
     font-size: 0.8em;
+    text-align: center;
+    margin: 4vh 0 0;
 }
 
 footer a{
@@ -96,34 +98,39 @@ footer a{
     font-weight: 700;
 }
 
-/* Image style */
+/* Image styling */
 img{
     width: 17vw;
 }
 
 /* General positioning */
-
-/* I could do this but I don't know how it's gonna turn out
-header, .info{
-    display: inline-block;
-    width: 50%;
-    float: left;
-} */
-
 header{
     display: inline-block;
     width: 45%;
     position: absolute;
-    background-color: #2a6f979c;
 }
 
+/* Crew's position placing */
+figure{
+    position: relative;
+}
+
+span {
+    display: inline-block;
+    transform: rotate(0.75turn);
+    transform-origin: top right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Grids */
 .container1{
-    background-color: #ffdab9;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: fit-content(20vh) fit-content(70vh);
     grid-template-areas:
-        ". . . info info ."
+        ". . . . info info"
         "gallery gallery gallery gallery gallery gallery";
     grid-row-gap: 5vh;
 }
@@ -137,10 +144,21 @@ header{
 }
 
 .container2{
-    background: #fcd5ce;
     display: grid;
-    height: 70vh;
+    min-height: 70vh;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: minmax(30vh 50vh) minmax(1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
 
+.container2 figure:nth-child(3n+1){
+    justify-self: left;
+}
+
+.container2 figure:nth-child(3n+3){
+    justify-self: right;
+}
+
+.container2 figure:nth-child(3n+2){
+    align-self: end;
 }
