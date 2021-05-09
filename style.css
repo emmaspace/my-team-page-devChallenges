@@ -1,0 +1,164 @@
+/* Style reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* End of reset */
+
+
+/* General styling */
+body{
+    color: #000;
+    font-size: 18px;
+    padding: 10vh 10vw 2vh 12vw;
+}
+
+/* Text styling */
+h1{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+figcaption{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+figcaption span{
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+footer{
+    font-family: 'Montserrat', sans-serif;
+    color: #A9A9A9;
+    font-weight: 500;
+    font-size: 0.8em;
+    text-align: center;
+    margin: 4vh 0 0;
+}
+
+footer a{
+    color: inherit;
+    font-weight: 700;
+}
+
+/* Image styling */
+img{
+    width: 17vw;
+}
+
+/* General positioning */
+header{
+    display: inline-block;
+    width: 45%;
+    position: absolute;
+}
+
+/* Crew's position placing */
+figure{
+    position: relative;
+}
+
+span {
+    display: inline-block;
+    transform: rotate(0.75turn);
+    transform-origin: top right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Grids */
+.container1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: fit-content(20vh) fit-content(70vh);
+    grid-template-areas:
+        ". . . . info info"
+        "gallery gallery gallery gallery gallery gallery";
+    grid-row-gap: 5vh;
+}
+
+.info{
+    grid-area: info;
+}
+
+.imageGallery{
+    grid-area: gallery;
+}
+
+.container2{
+    display: grid;
+    min-height: 70vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+
+.container2 figure:nth-child(3n+1){
+    justify-self: left;
+}
+
+.container2 figure:nth-child(3n+3){
+    justify-self: right;
+}
+
+.container2 figure:nth-child(3n+2){
+    align-self: end;
+}
