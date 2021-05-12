@@ -176,7 +176,7 @@ span {
     }
     
     .container2 figure:nth-child(2n+1) {
-        min-height: 50vh;
+        min-height: 70vh;
         align-self: start;
     }
 
@@ -191,6 +191,9 @@ span {
     body{
         font-size: 15px;
     }
+    
+    .container2 figure:nth-child(2n+1) {
+        min-height: 50vh;
 }
 
 /* Desktop 
