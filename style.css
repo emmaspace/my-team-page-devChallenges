@@ -46,7 +46,7 @@ table {
 body{
     color: #000;
     font-size: 18px;
-    padding: 10vh 10vw 2vh 12vw;
+    padding: 10vh 10vw 2vh;
 }
 
 /* Text styling */
@@ -90,7 +90,7 @@ footer{
     font-weight: 500;
     font-size: 0.8em;
     text-align: center;
-    margin: 4vh 0 0;
+    margin: 5vh 0 0;
 }
 
 footer a{
@@ -100,7 +100,7 @@ footer a{
 
 /* Image styling */
 img{
-    width: 17vw;
+    width: 20vw;
 }
 
 /* General positioning */
@@ -128,6 +128,7 @@ span {
 .container1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /* Checar si cambio a auto o kp2 */
     grid-template-rows: fit-content(20vh) fit-content(70vh);
     grid-template-areas:
         ". . . . info info"
@@ -145,20 +146,73 @@ span {
 
 .container2{
     display: grid;
-    min-height: 70vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
 }
 
-.container2 figure:nth-child(3n+1){
-    justify-self: left;
+/* Adaptations for different screen sizes */
+/* Tablet */
+@media (max-width:900px) {
+    header {
+        display: block;
+        position: static;
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+    
+    img{
+        width: 35vw;
+    }
+
+    .container1{
+        grid-template-columns: 1fr;
+        grid-template-rows: fit-content(20vh) 1fr;
+    }
+
+    .container2 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    .container2 figure:nth-child(2n+1) {
+        min-height: 50vh;
+        align-self: start;
+    }
+
+    .container2 figure:nth-child(2n) {
+        justify-self: right;
+        align-self: end;
+    } 
 }
 
-.container2 figure:nth-child(3n+3){
-    justify-self: right;
+/* Mobile */
+@media (max-width:480px){
+    body{
+        font-size: 15px;
+    }
 }
 
-.container2 figure:nth-child(3n+2){
-    align-self: end;
+/* Desktop 
+(This needed to be here in order to not affect mobile and tablet styles)*/
+@media (min-width:901px){
+    .container2 figure:nth-child(3n+1) {
+        justify-self: left;
+        min-height: 70vh;
+    }
+
+    .container2 figure:nth-child(3n+3) {
+        justify-self: right;
+    }
+
+    .container2 figure:nth-child(3n+2) {
+        align-self: end;
+    }
+}
+
+/* Bigger screens */
+@media (min-width:1500px){
+    body {
+        font-size: 40px;
+    }
 }
