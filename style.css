@@ -194,6 +194,7 @@ span {
     
     .container2 figure:nth-child(2n+1) {
         min-height: 50vh;
+    }
 }
 
 /* Desktop 

@@ -16,7 +16,11 @@ Solution for a challenge from  [Devchallenges.io](http://devchallenges.io)
 
 ![Web page in Responsively gif](https://cdn.glitch.com/9969d4b0-7dc7-4ded-ad92-a149776350ee%2FMy%20team%20page.gif?v=1620782241606)
 
-This project has a very interesting layout in the desktop design as well as in the mobile design which was a little challenging to approach at first but while doing so, it helped me practice and understand come CSS details I had overlooked before. This way, I consolidated a better understanding of CSS and how to approach a responsive design. I also learned how to manage pseudo-classes in an effective way and how the elements change their behavior depending on styling details.
+This project has a very interesting layout in the desktop design as well as in the mobile design which was a little challenging to approach at first but while doing so, it helped me practice and understand come CSS details I had overlooked before. This way, I consolidated a better understanding of CSS and how to approach a responsive design. 
+
+I also learned how to manage pseudo-classes in an effective way and how the elements change their behavior depending on styling details.
+
+This also helped me learn and understand how psotioning works in CSS, so I learned how to used these different properties correctly.
 
 ### Built With
 
