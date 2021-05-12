@@ -1,23 +1,39 @@
-# Hello, and welcome to Glitch
-This is a basic HTML starter project you can build on however you like. No need to save. While you develop your site, your changes will happen 🪄 immediately in the preview window. You can upload assets like images or audio in `assets` to the left. Stylesheets and JavaScript live in the `public` folder. The rest is up to you and your imagination.
+# 404 Not Found Page
+
+Solution for a challenge from  [Devchallenges.io](http://devchallenges.io)
+
+[Demo](https://myteampage-devchallenges.glitch.me/) | [Solution](https://github.com/emmaspace/404-not-found-devChallenges) | [Challenge](https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY) 
+
+## Table of Contents
+
+- [Overview](#overview)
+  - [Built With](#built-with)
+- [Features](#features)
+- [Acknowledgements](#acknowledgements)
+- [Contact](#contact)
+
+## Overview
+
+![Web page in Responsively gif](https://cdn.glitch.com/9969d4b0-7dc7-4ded-ad92-a149776350ee%2FMy%20team%20page.gif?v=1620782241606)
+
+This project has a very interesting layout in the desktop design as well as in the mobile design which was a little challenging to approach at first but while doing so, it helped me practice and understand come CSS details I had overlooked before. This way, I consolidated a better understanding of CSS and how to approach a responsive design. I also learned how to manage pseudo-classes in an effective way.
+
+### Built With
+
+- [HTML](https://html.com/)
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html)
+
+## Features
+
+This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories.
 
 
-## What's in this project?
+## Acknowledgements
 
-← `README.md`: That's this file, where you can tell people what your cool website does and how you built it.
+- [CSS Grid Tutorial](https://www.youtube.com/watch?v=EFafSYg-PkI)
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+- [ResponsivelyApp](https://responsively.app/) to try the page in different devices.
 
-← `index.html`: This is the main HTML page for your site.
+## Contact
 
-← `style.css`: CSS files add styling rules to your content.
-
-← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
-
-
-![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
-
-## You built this with Glitch!
-
-[Glitch](https://glitch.com) is a friendly community where millions of people come together to build web apps and websites.
-
-- Need more help? [Check out our Help Center](https://help.glitch.com/) for answers to any common questions.
-- Ready to make it official? [Become a paid Glitch member](https://glitch.com/pricing) to boost your app with private sharing, more storage and memory, domains and more.
+- GitHub [@emmaspace](https://github.com/emmaspace)
