@@ -117,11 +117,12 @@ figure{
 
 span {
     display: inline-block;
-    transform: rotate(0.75turn);
-    transform-origin: top right;
+    transform: rotate(0.25turn);
+    transform-origin: top left;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 21.5vw;
+    width: 20vw;
 }
 
 /* Grids */
@@ -165,6 +166,11 @@ span {
         width: 35vw;
     }
 
+    span {
+        left: 37vw;
+        width: 35vw;
+    }
+    
     .container1{
         grid-template-columns: 1fr;
         grid-template-rows: fit-content(20vh) 1fr;
@@ -190,6 +196,11 @@ span {
 @media (max-width:480px){
     body{
         font-size: 15px;
+    }
+  
+    span {
+        left: 40vw;
+        width: 35vw;
     }
     
     .container2 figure:nth-child(2n+1) {
